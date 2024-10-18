@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: clip; /* Change to overflow-x: hidden; */
+}
+
+.text-animation {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #bc5c5a;
+  -webkit-animation: focus-in-expand 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: focus-in-expand 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.img {
+  -webkit-animation: scale-in-center 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: scale-in-center 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.aboutMe {
+  background-color: #0d0c1b;
+}
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.color {
+  color: #bc5c5a;
+}
+
+@-webkit-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.skills {
+  background-color: #0d0c1b;
+}
+.form-label {
+  font-family: "PT Serif", serif;
+  color: white;
+  font-family: 800;
+}
+.form-input {
+  font-family: "PT Serif", serif;
+}
+.skill {
+  font-family: "PT Serif", serif;
+  font-size: 38px;
+  font-weight: 800;
+  color: white;
+}
+
+.projects {
+  transition: filter 0.3s ease;
+}
+
+.projects.blurred {
+  filter: blur(8px);
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+.about {
+  font-family: "EB Garamond", serif;
+  font-size: 38px;
+  font-weight: 800;
+  color: rgb(241, 241, 241);
+}
+
+.gify {
+  box-shadow: 2px 3px 34px 0px rgba(0, 0, 0, 0.75);
+  -webkit-animation: scale-in-center 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: scale-in-center 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.card {
+  /* box-shadow: 2px 3px 34px 0px rgba(0, 0, 0, 0.75); */
+  /* overflow-y: hidden; */
+}
+
+.form {
+  box-shadow: 2px 3px 34px 0px rgba(0, 0, 0, 0.75);
+}
+
+.about_text {
+  font-family: "EB Garamond", serif;
+  font-size: 1rem;
+  color: white;
+  max-width: 70%; /* Example: Limit line width to 70% of container */
+  margin: 0 auto; /* Center the text horizontally */
+}
+.card {
+  max-width: 100%; /* Base style */
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 50%; /* Adjust max-width for smaller screens */
+  }
+}
+
+.contactForm {
+  background-color: #f8f9fa; /* Light background color for better readability */
+}
+
+.form-container {
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    margin-top: 20px; /* Add some top margin for smaller screens */
+  }
+}
+
+.form-label {
+  color: white; /* Make sure the label text is white */
+}
+
+.contactForm .btn-dark {
+  background-color: #343a40; /* Dark background color for the button */
+  border: none;
+}
+
+.contactForm .btn-dark:hover {
+  background-color: #23272b; /* Darker background color on hover */
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
